@@ -18,7 +18,7 @@ import com.hxz.jblog.config.RootConfig.WebPackage;
 public class RootConfig {
 
 	public static class WebPackage extends RegexPatternTypeFilter {
-		public WebPackage() {
+		public WebPackage() { 
 			super(Pattern.compile("com\\.hxz\\.jblog\\.web.*"));
 		}
 	}
