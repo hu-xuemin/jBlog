@@ -14,8 +14,8 @@ public class ArticleRepositoryImpl implements ArticleRepository{
     private SqlSessionTemplate sqlSession; 
 
     @Override
-    public Article getArticle(int id) {
-        return sqlSession.selectOne("ARTICLE.getArticle", 111);
+    public Article getArticle(long id) {
+        return sqlSession.selectOne("ARTICLE.getArticle", id);
     }
 
     @Override

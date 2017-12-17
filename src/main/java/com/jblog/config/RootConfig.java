@@ -13,9 +13,9 @@ import org.springframework.core.type.filter.RegexPatternTypeFilter;
 import com.jblog.config.RootConfig.WebPackage;
 
 @Configuration
-@ImportResource("classpath:applicationContext.xml")
 @ComponentScan(basePackages = { "com.jblog" }, excludeFilters = {
 		@Filter(type = FilterType.CUSTOM, value = WebPackage.class) })
+@ImportResource("classpath:applicationContext.xml")
 @EnableAspectJAutoProxy(proxyTargetClass=true)
 public class RootConfig {
 

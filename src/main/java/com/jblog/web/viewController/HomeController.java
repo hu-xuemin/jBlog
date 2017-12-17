@@ -10,6 +10,7 @@ public class HomeController {
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public String home(){
+	    System.out.println("11");
 		return "index";
 	}
 }

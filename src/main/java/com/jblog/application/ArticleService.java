@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.jblog.domain.article.Article;
 import com.jblog.domain.article.ArticleFactory;
+import com.jblog.domain.article.ArticleNotFoundException;
 import com.jblog.infrastructure.dto.ArticleDTO;
 import com.jblog.repository.ArticleRepository;
 
@@ -24,7 +25,12 @@ public class ArticleService {
         article.setArticleTitle("abc");
         article.setArticleContent("def");
         return article;*/
-        return ArticleFactory.createArticleDTO(articleRepositoryImpl.getArticle(111));
+        Article article = articleRepositoryImpl.getArticle(id);
+        if (article != null) {
+            return ArticleFactory.createArticleDTO(article);
+        } else {
+            throw new ArticleNotFoundException();
+        }
     }
     
     public int count(){
