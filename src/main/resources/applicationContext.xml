@@ -52,7 +52,7 @@
 	<!-- 配置数据仓库 -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- 扫描包路径，如果需要扫描多个，中间使用半角的逗号隔开 -->
-		<property name="basePackage" value="com.jblog.repository"></property>
+		<property name="basePackage" value="com.jblog.repository.impl"></property>
 		<property name="SqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
 	</bean>
 	<bean id="transactionManager"

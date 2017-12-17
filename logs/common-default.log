@@ -4252,3 +4252,294 @@ Caused by: java.lang.IllegalArgumentException: Mapped Statements collection alre
 2017-12-17 15:27:16,488 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
 2017-12-17 15:27:16,488 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
 2017-12-17 15:27:16,488 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@1c25b8a7 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@76b99e7b)
+2017-12-17 15:32:57,523 DEBUG mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/com/jblog/repository/ArticleRepository.class]
+2017-12-17 15:32:57,524 DEBUG mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/com/jblog/repository/impl/ArticleRepositoryImpl.class]
+2017-12-17 15:32:57,524 DEBUG mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleRepository' and 'com.jblog.repository.ArticleRepository' mapperInterface
+2017-12-17 15:32:57,625 DEBUG logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-12-17 15:32:57,657 INFO  log.MLog - MLog clients using log4j logging.
+2017-12-17 15:33:02,731 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-12-17 15:33:02,745 DEBUG management.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge15z9srks6zd18qp3a3|2e6a8155] registered.
+2017-12-17 15:33:02,785 DEBUG spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2017-12-17 15:33:02,868 DEBUG spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/mappers/ArticleMapper.xml]'
+2017-12-17 15:33:02,928 DEBUG spring.SqlSessionUtils - Creating a new SqlSession
+2017-12-17 15:33:02,932 DEBUG spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6676f6a0] was not registered for synchronization because synchronization is not active
+2017-12-17 15:33:02,966 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 1
+2017-12-17 15:33:02,966 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 2
+2017-12-17 15:33:02,966 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 3
+2017-12-17 15:33:02,967 DEBUG resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool@45a37759 config: [start -> 3; min -> 3; max -> 50; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; mox_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2017-12-17 15:33:02,967 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9srks6zd18qp3a3|2e6a8155, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9srks6zd18qp3a3|2e6a8155, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/blog?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 5, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-12-17 15:33:02,967 DEBUG resourcepool.BasicResourcePool - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-12-17 15:33:02,968 DEBUG resourcepool.BasicResourcePool - awaitAvailable(): [unknown]
+2017-12-17 15:33:02,968 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 0, unused: 0, excluded: 0]
+2017-12-17 15:33:03,252 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:33:03,252 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:33:03,253 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:33:03,253 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@7fb4dc65.acquireResource() returning. 
+2017-12-17 15:33:03,253 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@7fb4dc65.acquireResource() returning. 
+2017-12-17 15:33:03,253 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@7fb4dc65.acquireResource() returning. 
+2017-12-17 15:33:03,253 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 1, unused: 1, excluded: 0]
+2017-12-17 15:33:03,254 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3f80cdc5)
+2017-12-17 15:33:03,254 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3f80cdc5)
+2017-12-17 15:33:03,254 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 2
+2017-12-17 15:33:03,254 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 1
+2017-12-17 15:33:03,254 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3f80cdc5)
+2017-12-17 15:33:03,254 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 0
+2017-12-17 15:33:03,254 DEBUG transaction.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2d778add] will not be managed by Spring
+2017-12-17 15:33:03,257 DEBUG ARTICLE.count - ==>  Preparing: select count(*) from articles 
+2017-12-17 15:33:03,268 DEBUG stmt.GooGooStatementCache - cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@3b6340f8 ).size(): 1
+2017-12-17 15:33:03,268 DEBUG stmt.GooGooStatementCache - checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2017-12-17 15:33:03,282 DEBUG ARTICLE.count - ==> Parameters: 
+2017-12-17 15:33:03,298 DEBUG ARTICLE.count - <==      Total: 1
+2017-12-17 15:33:03,302 DEBUG stmt.GooGooStatementCache - checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:03,303 DEBUG spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6676f6a0]
+2017-12-17 15:33:03,303 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:03,304 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3f80cdc5)
+2017-12-17 15:33:03,304 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:03,304 DEBUG spring.SqlSessionUtils - Creating a new SqlSession
+2017-12-17 15:33:03,304 DEBUG spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1339e7aa] was not registered for synchronization because synchronization is not active
+2017-12-17 15:33:03,304 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3f80cdc5)
+2017-12-17 15:33:03,304 DEBUG transaction.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@49c66ade] will not be managed by Spring
+2017-12-17 15:33:03,304 DEBUG ARTICLE.count - ==>  Preparing: select count(*) from articles 
+2017-12-17 15:33:03,304 DEBUG stmt.GooGooStatementCache - com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache ----> CACHE HIT
+2017-12-17 15:33:03,304 DEBUG stmt.GooGooStatementCache - checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2017-12-17 15:33:03,305 DEBUG ARTICLE.count - ==> Parameters: 
+2017-12-17 15:33:03,305 DEBUG ARTICLE.count - <==      Total: 1
+2017-12-17 15:33:03,305 DEBUG stmt.GooGooStatementCache - checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:03,306 DEBUG spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1339e7aa]
+2017-12-17 15:33:03,306 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:03,306 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@3f80cdc5)
+2017-12-17 15:33:03,306 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:03,379 DEBUG mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/com/jblog/repository/ArticleRepository.class]
+2017-12-17 15:33:03,380 DEBUG mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/com/jblog/repository/impl/ArticleRepositoryImpl.class]
+2017-12-17 15:33:03,380 DEBUG mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleRepository' and 'com.jblog.repository.ArticleRepository' mapperInterface
+2017-12-17 15:33:03,400 DEBUG management.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge15z9srks6zd18qp3a3|5812f68b] registered.
+2017-12-17 15:33:03,406 DEBUG spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2017-12-17 15:33:03,414 DEBUG spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/mappers/ArticleMapper.xml]'
+2017-12-17 15:33:03,952 DEBUG spring.SqlSessionUtils - Creating a new SqlSession
+2017-12-17 15:33:03,952 DEBUG spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1827a871] was not registered for synchronization because synchronization is not active
+2017-12-17 15:33:03,957 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 1
+2017-12-17 15:33:03,957 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 2
+2017-12-17 15:33:03,957 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 3
+2017-12-17 15:33:03,957 DEBUG resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool@66238be2 config: [start -> 3; min -> 3; max -> 50; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; mox_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2017-12-17 15:33:03,959 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9srks6zd18qp3a3|5812f68b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9srks6zd18qp3a3|5812f68b, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/blog?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 5, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-12-17 15:33:03,962 DEBUG resourcepool.BasicResourcePool - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-12-17 15:33:03,965 DEBUG resourcepool.BasicResourcePool - awaitAvailable(): [unknown]
+2017-12-17 15:33:03,966 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@66238be2 [managed: 0, unused: 0, excluded: 0]
+2017-12-17 15:33:03,970 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:33:03,970 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:33:03,970 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@34d207ed.acquireResource() returning. 
+2017-12-17 15:33:03,970 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@34d207ed.acquireResource() returning. 
+2017-12-17 15:33:03,971 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@66238be2 [managed: 1, unused: 1, excluded: 0]
+2017-12-17 15:33:03,971 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:33:03,971 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@66238be2 [managed: 2, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6d6a503)
+2017-12-17 15:33:03,971 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@34d207ed.acquireResource() returning. 
+2017-12-17 15:33:03,971 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 2
+2017-12-17 15:33:03,971 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@66238be2 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6d6a503)
+2017-12-17 15:33:03,971 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 1
+2017-12-17 15:33:03,971 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@66238be2 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6d6a503)
+2017-12-17 15:33:03,971 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 0
+2017-12-17 15:33:03,972 DEBUG transaction.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@200606de] will not be managed by Spring
+2017-12-17 15:33:03,972 DEBUG ARTICLE.getArticle - ==>  Preparing: select * from articles where id=? 
+2017-12-17 15:33:03,972 DEBUG stmt.GooGooStatementCache - cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@38a11f0b ).size(): 1
+2017-12-17 15:33:03,972 DEBUG stmt.GooGooStatementCache - checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2017-12-17 15:33:03,973 DEBUG ARTICLE.getArticle - ==> Parameters: 11862601330745(Long)
+2017-12-17 15:33:03,983 DEBUG ARTICLE.getArticle - <==      Total: 1
+2017-12-17 15:33:03,984 DEBUG stmt.GooGooStatementCache - checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:03,984 DEBUG spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1827a871]
+2017-12-17 15:33:03,984 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:03,984 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:03,984 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@66238be2 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6d6a503)
+2017-12-17 15:33:03,985 DEBUG impl.NewProxyConnection - com.mchange.v2.c3p0.impl.NewProxyConnection@200606de: close() called more than once.
+2017-12-17 15:33:08,970 DEBUG mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/com/jblog/repository/ArticleRepository.class]
+2017-12-17 15:33:08,970 DEBUG mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/com/jblog/repository/impl/ArticleRepositoryImpl.class]
+2017-12-17 15:33:08,970 DEBUG mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleRepository' and 'com.jblog.repository.ArticleRepository' mapperInterface
+2017-12-17 15:33:09,076 DEBUG logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-12-17 15:33:09,108 INFO  log.MLog - MLog clients using log4j logging.
+2017-12-17 15:33:14,190 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-12-17 15:33:14,204 DEBUG management.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge15z9srksftn1ycj6a7|2e6a8155] registered.
+2017-12-17 15:33:14,239 DEBUG spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2017-12-17 15:33:14,333 DEBUG spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/mappers/ArticleMapper.xml]'
+2017-12-17 15:33:14,392 DEBUG spring.SqlSessionUtils - Creating a new SqlSession
+2017-12-17 15:33:14,396 DEBUG spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6676f6a0] was not registered for synchronization because synchronization is not active
+2017-12-17 15:33:14,425 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 1
+2017-12-17 15:33:14,426 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 2
+2017-12-17 15:33:14,426 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 3
+2017-12-17 15:33:14,426 DEBUG resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool@45a37759 config: [start -> 3; min -> 3; max -> 50; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; mox_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2017-12-17 15:33:14,427 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9srksftn1ycj6a7|2e6a8155, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9srksftn1ycj6a7|2e6a8155, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/blog?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 5, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-12-17 15:33:14,427 DEBUG resourcepool.BasicResourcePool - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-12-17 15:33:14,427 DEBUG resourcepool.BasicResourcePool - awaitAvailable(): [unknown]
+2017-12-17 15:33:14,427 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 0, unused: 0, excluded: 0]
+2017-12-17 15:33:14,698 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:33:14,698 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:33:14,699 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:33:14,699 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@48fa185b.acquireResource() returning. 
+2017-12-17 15:33:14,699 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@48fa185b.acquireResource() returning. 
+2017-12-17 15:33:14,699 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@48fa185b.acquireResource() returning. 
+2017-12-17 15:33:14,699 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 1, unused: 1, excluded: 0]
+2017-12-17 15:33:14,699 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 2, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6950cefe)
+2017-12-17 15:33:14,699 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6950cefe)
+2017-12-17 15:33:14,699 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 2
+2017-12-17 15:33:14,700 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6950cefe)
+2017-12-17 15:33:14,700 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 1
+2017-12-17 15:33:14,700 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 0
+2017-12-17 15:33:14,700 DEBUG transaction.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@2d778add] will not be managed by Spring
+2017-12-17 15:33:14,703 DEBUG ARTICLE.count - ==>  Preparing: select count(*) from articles 
+2017-12-17 15:33:14,714 DEBUG stmt.GooGooStatementCache - cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@1db878b2 ).size(): 1
+2017-12-17 15:33:14,714 DEBUG stmt.GooGooStatementCache - checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2017-12-17 15:33:14,726 DEBUG ARTICLE.count - ==> Parameters: 
+2017-12-17 15:33:14,742 DEBUG ARTICLE.count - <==      Total: 1
+2017-12-17 15:33:14,747 DEBUG stmt.GooGooStatementCache - checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:14,747 DEBUG spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6676f6a0]
+2017-12-17 15:33:14,748 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:14,748 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6950cefe)
+2017-12-17 15:33:14,748 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:14,748 DEBUG spring.SqlSessionUtils - Creating a new SqlSession
+2017-12-17 15:33:14,748 DEBUG spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1339e7aa] was not registered for synchronization because synchronization is not active
+2017-12-17 15:33:14,749 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6950cefe)
+2017-12-17 15:33:14,749 DEBUG transaction.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@49c66ade] will not be managed by Spring
+2017-12-17 15:33:14,749 DEBUG ARTICLE.count - ==>  Preparing: select count(*) from articles 
+2017-12-17 15:33:14,749 DEBUG stmt.GooGooStatementCache - com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache ----> CACHE HIT
+2017-12-17 15:33:14,749 DEBUG stmt.GooGooStatementCache - checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2017-12-17 15:33:14,749 DEBUG ARTICLE.count - ==> Parameters: 
+2017-12-17 15:33:14,750 DEBUG ARTICLE.count - <==      Total: 1
+2017-12-17 15:33:14,750 DEBUG stmt.GooGooStatementCache - checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:14,750 DEBUG spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1339e7aa]
+2017-12-17 15:33:14,750 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:14,750 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@45a37759 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6950cefe)
+2017-12-17 15:33:14,750 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:14,825 DEBUG mapper.ClassPathMapperScanner - Identified candidate component class: file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/com/jblog/repository/ArticleRepository.class]
+2017-12-17 15:33:14,825 DEBUG mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/com/jblog/repository/impl/ArticleRepositoryImpl.class]
+2017-12-17 15:33:14,825 DEBUG mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'articleRepository' and 'com.jblog.repository.ArticleRepository' mapperInterface
+2017-12-17 15:33:14,846 DEBUG management.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge15z9srksftn1ycj6a7|5812f68b] registered.
+2017-12-17 15:33:14,852 DEBUG spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2017-12-17 15:33:14,863 DEBUG spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/mappers/ArticleMapper.xml]'
+2017-12-17 15:33:15,464 DEBUG spring.SqlSessionUtils - Creating a new SqlSession
+2017-12-17 15:33:15,464 DEBUG spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1827a871] was not registered for synchronization because synchronization is not active
+2017-12-17 15:33:15,469 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 1
+2017-12-17 15:33:15,469 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 2
+2017-12-17 15:33:15,469 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 3
+2017-12-17 15:33:15,472 DEBUG resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool@66238be2 config: [start -> 3; min -> 3; max -> 50; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; mox_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2017-12-17 15:33:15,473 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9srksftn1ycj6a7|5812f68b, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9srksftn1ycj6a7|5812f68b, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/blog?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 5, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-12-17 15:33:15,474 DEBUG resourcepool.BasicResourcePool - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-12-17 15:33:15,475 DEBUG resourcepool.BasicResourcePool - awaitAvailable(): [unknown]
+2017-12-17 15:33:15,475 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@66238be2 [managed: 0, unused: 0, excluded: 0]
+2017-12-17 15:33:15,481 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:33:15,482 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@7877e868.acquireResource() returning. 
+2017-12-17 15:33:15,482 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:33:15,482 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@7877e868.acquireResource() returning. 
+2017-12-17 15:33:15,482 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@66238be2 [managed: 1, unused: 1, excluded: 0]
+2017-12-17 15:33:15,482 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 2
+2017-12-17 15:33:15,482 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@66238be2 [managed: 2, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1b5b567d)
+2017-12-17 15:33:15,482 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:33:15,482 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 1
+2017-12-17 15:33:15,482 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@7877e868.acquireResource() returning. 
+2017-12-17 15:33:15,482 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@66238be2 [managed: 3, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1b5b567d)
+2017-12-17 15:33:15,483 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 0
+2017-12-17 15:33:15,483 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@66238be2 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1b5b567d)
+2017-12-17 15:33:15,483 DEBUG transaction.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@200606de] will not be managed by Spring
+2017-12-17 15:33:15,483 DEBUG ARTICLE.getArticle - ==>  Preparing: select * from articles where id=? 
+2017-12-17 15:33:15,483 DEBUG stmt.GooGooStatementCache - cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@53e17445 ).size(): 1
+2017-12-17 15:33:15,483 DEBUG stmt.GooGooStatementCache - checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2017-12-17 15:33:15,484 DEBUG ARTICLE.getArticle - ==> Parameters: 11862601330745(Long)
+2017-12-17 15:33:15,492 DEBUG ARTICLE.getArticle - <==      Total: 1
+2017-12-17 15:33:15,492 DEBUG stmt.GooGooStatementCache - checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:15,492 DEBUG spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1827a871]
+2017-12-17 15:33:15,492 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:15,492 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:33:15,492 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@66238be2 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@1b5b567d)
+2017-12-17 15:33:15,493 DEBUG impl.NewProxyConnection - com.mchange.v2.c3p0.impl.NewProxyConnection@200606de: close() called more than once.
+2017-12-17 15:46:28,061 DEBUG mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/com/jblog/repository/impl/ArticleRepositoryImpl.class]
+2017-12-17 15:46:28,062 WARN  mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jblog.repository.impl]' package. Please check your configuration.
+2017-12-17 15:46:28,159 DEBUG logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2017-12-17 15:46:28,183 INFO  log.MLog - MLog clients using log4j logging.
+2017-12-17 15:46:33,255 INFO  c3p0.C3P0Registry - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2017-12-17 15:46:33,268 DEBUG management.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge15z9srl9kdz72rt98|3527942a] registered.
+2017-12-17 15:46:33,302 DEBUG spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2017-12-17 15:46:33,396 DEBUG spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/mappers/ArticleMapper.xml]'
+2017-12-17 15:46:33,449 DEBUG spring.SqlSessionUtils - Creating a new SqlSession
+2017-12-17 15:46:33,452 DEBUG spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35399441] was not registered for synchronization because synchronization is not active
+2017-12-17 15:46:33,482 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 1
+2017-12-17 15:46:33,482 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 2
+2017-12-17 15:46:33,482 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 3
+2017-12-17 15:46:33,483 DEBUG resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool@2d6c53fc config: [start -> 3; min -> 3; max -> 50; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; mox_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2017-12-17 15:46:33,483 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9srl9kdz72rt98|3527942a, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9srl9kdz72rt98|3527942a, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/blog?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 5, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-12-17 15:46:33,483 DEBUG resourcepool.BasicResourcePool - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-12-17 15:46:33,483 DEBUG resourcepool.BasicResourcePool - awaitAvailable(): [unknown]
+2017-12-17 15:46:33,483 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@2d6c53fc [managed: 0, unused: 0, excluded: 0]
+2017-12-17 15:46:33,749 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:46:33,750 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:46:33,750 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:46:33,750 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@c083ee2.acquireResource() returning. 
+2017-12-17 15:46:33,750 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@c083ee2.acquireResource() returning. 
+2017-12-17 15:46:33,750 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@c083ee2.acquireResource() returning. 
+2017-12-17 15:46:33,750 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@2d6c53fc [managed: 1, unused: 1, excluded: 0]
+2017-12-17 15:46:33,751 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@2d6c53fc [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5c9271ce)
+2017-12-17 15:46:33,751 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@2d6c53fc [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5c9271ce)
+2017-12-17 15:46:33,751 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 2
+2017-12-17 15:46:33,751 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 1
+2017-12-17 15:46:33,751 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@2d6c53fc [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5c9271ce)
+2017-12-17 15:46:33,751 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 0
+2017-12-17 15:46:33,751 DEBUG transaction.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@7fbdb894] will not be managed by Spring
+2017-12-17 15:46:33,755 DEBUG ARTICLE.count - ==>  Preparing: select count(*) from articles 
+2017-12-17 15:46:33,766 DEBUG stmt.GooGooStatementCache - cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@571913f2 ).size(): 1
+2017-12-17 15:46:33,766 DEBUG stmt.GooGooStatementCache - checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2017-12-17 15:46:33,778 DEBUG ARTICLE.count - ==> Parameters: 
+2017-12-17 15:46:33,795 DEBUG ARTICLE.count - <==      Total: 1
+2017-12-17 15:46:33,799 DEBUG stmt.GooGooStatementCache - checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:46:33,799 DEBUG spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@35399441]
+2017-12-17 15:46:33,800 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:46:33,800 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@2d6c53fc [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5c9271ce)
+2017-12-17 15:46:33,801 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:46:33,801 DEBUG spring.SqlSessionUtils - Creating a new SqlSession
+2017-12-17 15:46:33,801 DEBUG spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7daa0fbd] was not registered for synchronization because synchronization is not active
+2017-12-17 15:46:33,801 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@2d6c53fc [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5c9271ce)
+2017-12-17 15:46:33,801 DEBUG transaction.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5a3bc7ed] will not be managed by Spring
+2017-12-17 15:46:33,801 DEBUG ARTICLE.count - ==>  Preparing: select count(*) from articles 
+2017-12-17 15:46:33,801 DEBUG stmt.GooGooStatementCache - com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache ----> CACHE HIT
+2017-12-17 15:46:33,801 DEBUG stmt.GooGooStatementCache - checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2017-12-17 15:46:33,801 DEBUG ARTICLE.count - ==> Parameters: 
+2017-12-17 15:46:33,802 DEBUG ARTICLE.count - <==      Total: 1
+2017-12-17 15:46:33,803 DEBUG stmt.GooGooStatementCache - checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:46:33,803 DEBUG spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7daa0fbd]
+2017-12-17 15:46:33,803 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:46:33,803 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@2d6c53fc [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@5c9271ce)
+2017-12-17 15:46:33,803 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:46:33,878 DEBUG mapper.ClassPathMapperScanner - Ignored because not a concrete top-level class: file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/com/jblog/repository/impl/ArticleRepositoryImpl.class]
+2017-12-17 15:46:33,878 WARN  mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.jblog.repository.impl]' package. Please check your configuration.
+2017-12-17 15:46:33,898 DEBUG management.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource[1hge15z9srl9kdz72rt98|41e68d87] registered.
+2017-12-17 15:46:33,906 DEBUG spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2017-12-17 15:46:33,913 DEBUG spring.SqlSessionFactoryBean - Parsed mapper file: 'file [/Users/huxuemin/Documents/workspace/jBlog/target/classes/mappers/ArticleMapper.xml]'
+2017-12-17 15:46:34,431 DEBUG spring.SqlSessionUtils - Creating a new SqlSession
+2017-12-17 15:46:34,431 DEBUG spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7646731d] was not registered for synchronization because synchronization is not active
+2017-12-17 15:46:34,435 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 1
+2017-12-17 15:46:34,435 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 2
+2017-12-17 15:46:34,435 DEBUG resourcepool.BasicResourcePool - incremented pending_acquires: 3
+2017-12-17 15:46:34,435 DEBUG resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool@40bffbca config: [start -> 3; min -> 3; max -> 50; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 60000; mox_resource_age -> 0; max_idle_time -> 600000; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 150000; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+2017-12-17 15:46:34,436 INFO  impl.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge15z9srl9kdz72rt98|41e68d87, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge15z9srl9kdz72rt98|41e68d87, idleConnectionTestPeriod -> 60, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/blog?useSSL=false, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 600, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 50, maxStatements -> 5, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2017-12-17 15:46:34,436 DEBUG resourcepool.BasicResourcePool - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+2017-12-17 15:46:34,436 DEBUG resourcepool.BasicResourcePool - awaitAvailable(): [unknown]
+2017-12-17 15:46:34,436 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@40bffbca [managed: 0, unused: 0, excluded: 0]
+2017-12-17 15:46:34,447 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 0; checked out: 0; num connections: 0; num keys: 0
+2017-12-17 15:46:34,448 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@2ee7a81e.acquireResource() returning. 
+2017-12-17 15:46:34,448 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@40bffbca [managed: 1, unused: 1, excluded: 0]
+2017-12-17 15:46:34,448 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 2
+2017-12-17 15:46:34,448 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@40bffbca [managed: 1, unused: 0, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6926f473)
+2017-12-17 15:46:34,448 DEBUG transaction.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@42a9a63e] will not be managed by Spring
+2017-12-17 15:46:34,448 DEBUG ARTICLE.getArticle - ==>  Preparing: select * from articles where id=? 
+2017-12-17 15:46:34,449 DEBUG stmt.GooGooStatementCache - cxnStmtMgr.statementSet( com.mysql.jdbc.JDBC4Connection@6427682d ).size(): 1
+2017-12-17 15:46:34,449 DEBUG stmt.GooGooStatementCache - checkoutStatement: com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2017-12-17 15:46:34,449 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2017-12-17 15:46:34,449 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@2ee7a81e.acquireResource() returning. 
+2017-12-17 15:46:34,449 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 1; num connections: 1; num keys: 1
+2017-12-17 15:46:34,449 DEBUG ARTICLE.getArticle - ==> Parameters: 11862601330745(Long)
+2017-12-17 15:46:34,449 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@40bffbca [managed: 2, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6926f473)
+2017-12-17 15:46:34,450 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 1
+2017-12-17 15:46:34,449 DEBUG impl.C3P0PooledConnectionPool - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@2ee7a81e.acquireResource() returning. 
+2017-12-17 15:46:34,450 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@40bffbca [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6926f473)
+2017-12-17 15:46:34,450 DEBUG resourcepool.BasicResourcePool - decremented pending_acquires: 0
+2017-12-17 15:46:34,458 DEBUG ARTICLE.getArticle - <==      Total: 1
+2017-12-17 15:46:34,458 DEBUG stmt.GooGooStatementCache - checkinStatement(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:46:34,458 DEBUG spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7646731d]
+2017-12-17 15:46:34,459 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1
+2017-12-17 15:46:34,459 DEBUG resourcepool.BasicResourcePool - trace com.mchange.v2.resourcepool.BasicResourcePool@40bffbca [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@6926f473)
+2017-12-17 15:46:34,459 DEBUG stmt.GooGooStatementCache - checkinAll(): com.mchange.v2.c3p0.stmt.GlobalMaxOnlyStatementCache stats -- total size: 1; checked out: 0; num connections: 1; num keys: 1

@@ -13,7 +13,7 @@ import com.jblog.repository.ArticleRepository;
 public class ArticleService {
     
     @Autowired
-    ArticleRepository articleRepositoryImpl;
+    ArticleRepository articleRepository;
     
     public Article publish(String title, String content, String username, String password) {
         return new Article();
@@ -25,7 +25,7 @@ public class ArticleService {
         article.setArticleTitle("abc");
         article.setArticleContent("def");
         return article;*/
-        Article article = articleRepositoryImpl.getArticle(id);
+        Article article = articleRepository.getArticle(id);
         if (article != null) {
             return ArticleFactory.createArticleDTO(article);
         } else {
@@ -34,6 +34,6 @@ public class ArticleService {
     }
     
     public int count(){
-        return articleRepositoryImpl.count();
+        return articleRepository.count();
     }
 }
