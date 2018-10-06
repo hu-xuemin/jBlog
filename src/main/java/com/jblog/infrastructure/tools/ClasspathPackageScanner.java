@@ -46,7 +46,7 @@ public class ClasspathPackageScanner {
     public List<String> getFullyQualifiedClassNameList() throws IOException {
 //        logger.info("开始扫描包{}下的所有类", basePackage);
 
-        return doScan(basePackage, new ArrayList<>());
+        return doScan(basePackage, new ArrayList<String>());
     }
 
     /**
